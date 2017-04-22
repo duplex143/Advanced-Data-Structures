@@ -1,5 +1,6 @@
 //  Created by Sumanth Culli on 13/11/16.
-//  Copyright © 2016 Sumanth. All rights reserved.#include <stdio.h>
+//  Copyright © 2016 Sumanth. All rights reserved.
+#include <stdio.h>
 #include <stdlib.h>
 
 
