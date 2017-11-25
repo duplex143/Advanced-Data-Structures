@@ -55,9 +55,13 @@ struct  node* Binary_Heap_Merge(struct node* H1,struct node* H2)
 	xyz=NULL;
 	a=H1;
 	b=H2;
-	if (a==NULL||a->field_degree>=b->field_degree)
+	if(a==NULL)
+		return b;
+	if(b==NULL)
+		return a;
+	if (a->field_degree>=b->field_degree)
 		xyz=b;
-	else if(b==NULL||a->field_degree<b->field_degree)
+	else if(a->field_degree<b->field_degree)
 		xyz=a;
 	if (xyz==NULL)
 	{
