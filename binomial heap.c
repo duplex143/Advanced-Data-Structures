@@ -61,12 +61,8 @@ struct  node* Binary_Heap_Merge(struct node* H1,struct node* H2)
 		return a;
 	if (a->field_degree>=b->field_degree)
 		xyz=b;
-	else if(a->field_degree<b->field_degree)
+	else
 		xyz=a;
-	if (xyz==NULL)
-	{
-		return xyz;      //If either of H1/H2 is NULL, then return      
-	}
 	if (xyz==b)      //If degree of H2 is less then H1 is placed in b and xyz is placed in b
 	{
 		b=a;
